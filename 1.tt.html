@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Timetable</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .links{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .links ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links a{
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .links a:hover{
+            color: red;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 10px;
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>JSS Science and Technology University</h1>
+    <h2>Department of Computer Science & Engineering</h2>
+    <h2>Class Timetable</h2>
+</header>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>9-10</th>
+        <th>10-11</th>
+        <th>11-12</th>
+    </tr>
+
+    <tr>
+        <td>Monday</td>
+        <td>20CS61</td>
+        <td rowspan="2">WT Lab</td>
+        <td>20CS62</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>20CS63</td>
+        <td>20CS64</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td colspan="2">Project Work</td>
+        <td>20CS65</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Subject</th>
+        <th>Faculty</th>
+    </tr>
+
+    <tr>
+        <td>20CS61</td>
+        <td>Web Technology</td>
+        <td>Prof. VS</td>
+    </tr>
+
+    <tr>
+        <td>20CS62</td>
+        <td>Machine Learning</td>
+        <td>Prof. SNM</td>
+    </tr>
+
+    <tr>
+        <td>20CS63</td>
+        <td>Internet of Things</td>
+        <td>Prof. SGC</td>
+    </tr>
+
+    <tr>
+        <td>20CS64</td>
+        <td>Cloud Computing</td>
+        <td>Prof. MAA</td>
+    </tr>
+</table>
+
+<div class="links">
+    <h3>Useful Links</h3>
+
+    <ul>
+        <li>
+            <a href="https://jssstuniv.in" target="_blank">
+                JSSSTU Official Website
+            </a>
+        </li>
+    </ul>
+</div>
+
+<footer>
+    <h3>Dr. Srinath S</h3>
+    <p>Head of the Department, CSE</p>
+</footer>
+
+</body>
+</html>
