@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <script>
+    function calculate(op) {
+        var a = parseFloat(document.getElementById("n1").value);
+        var b = parseFloat(document.getElementById("n2").value);
+
+        if (isNaN(a) || isNaN(b)) {
+            alert("Enter valid numbers");
+            return;
+        }
+
+        var result;
+
+        if (op == '+') result = a + b;
+        else if (op == '-') result = a - b;
+        else if (op == '*') result = a * b;
+        else result = a / b;
+
+        alert("Result = " + result);
+    }
+    </script>
+</head>
+
+<body>
+    <h2>Simple Calculator</h2>
+
+    Number 1:
+    <input type="text" id="n1"><br><br>
+
+    Number 2:
+    <input type="text" id="n2"><br><br>
+
+    <input type="button" value="+" onclick="calculate('+')">
+    <input type="button" value="-" onclick="calculate('-')">
+    <input type="button" value="*" onclick="calculate('*')">
+    <input type="button" value="/" onclick="calculate('/')">
+</body>
+</html>

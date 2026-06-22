@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+    function validateForm() {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let mobile = document.getElementById("mobile").value;
+        let gender = document.getElementById("gender").value;
+        let color = document.getElementById("color").value;
+
+        if (name == "") {
+            alert("Enter Name");
+            return;
+        }
+
+        if (!email.includes("@") || !email.includes(".")) {
+            alert("Invalid Email");
+            return;
+        }
+
+        if (mobile.length != 10) {
+            alert("Enter valid Mobile Number");
+            return;
+        }
+
+        if (gender == "") {
+            alert("Select Gender");
+            return;
+        }
+
+        if (color == "") {
+            alert("Enter Favorite Color");
+            return;
+        }
+
+        document.getElementById("result").value =
+            "Name: " + name +
+            "\nEmail: " + email +
+            "\nMobile: " + mobile +
+            "\nGender: " + gender +
+            "\nFavorite Color: " + color;
+    }
+    </script>
+</head>
+
+<body>
+
+<h2>Form Validation</h2>
+
+<form>
+    Name:
+    <input type="text" id="name"><br><br>
+
+    Email:
+    <input type="text" id="email"><br><br>
+
+    Mobile:
+    <input type="text" id="mobile"><br><br>
+
+    Gender:
+    <select id="gender">
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select><br><br>
+
+    Favorite Color:
+    <input type="text" id="color"><br><br>
+
+    <input type="button" value="Submit" onclick="validateForm()"><br><br>
+
+    <textarea id="result" rows="6" cols="40" readonly></textarea>
+</form>
+
+</body>
+</html>

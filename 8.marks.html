@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Average Marks</title>
+
+    <script type="text/javascript">
+    function calculate() {
+        var r = document.getElementById("reg").value;
+        var s = document.getElementById("sub").value;
+        var m1 = parseInt(document.getElementById("m1").value);
+        var m2 = parseInt(document.getElementById("m2").value);
+        var m3 = parseInt(document.getElementById("m3").value);
+
+        if (r=="" || s=="" || isNaN(m1) || isNaN(m2) || isNaN(m3)) {
+            alert("Fill all fields");
+            return;
+        }
+
+        var avg = (m1 + m2 + m3 - Math.min(m1,m2,m3))/2;
+
+        alert("Average Marks = " + avg);
+    }
+    </script>
+</head>
+
+<body>
+    <h2>Average Marks Calculator</h2>
+
+    <form action="#">
+        Register No:
+        <input type="text" id="reg" /><br /><br />
+
+        Subject Code:
+        <input type="text" id="sub" /><br /><br />
+
+        Test 1:
+        <input type="number" id="m1" /><br /><br />
+
+        Test 2:
+        <input type="number" id="m2" /><br /><br />
+
+        Test 3:
+        <input type="number" id="m3" /><br /><br />
+
+        <input type="button" value="Calculate" onclick="calculate()" />
+    </form>
+</body>
+</html>

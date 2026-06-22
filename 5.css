@@ -1,0 +1,50 @@
+.normal{
+    color:blue;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.caps{
+    font-variant:small-caps;
+}
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color:orange;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+.hide{
+    visibility:hidden;
+}
+
+.repeat,
+.norepeat{
+    height:200px;
+    border:1px solid black;
+    background-image:url("bg.png");
+    background-size:100px 100px;
+}
+.repeat{
+    background-repeat:repeat;
+}
+
+.norepeat{
+    background-repeat:no-repeat;
+}
