@@ -1,111 +1,308 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Department Timetable</title>
+<meta charset="UTF-8">
+<title>JSSSTU Timetable</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
 
-        header{
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.header{
+    text-align:center;
+    line-height:1.6;
+}
 
-        table{
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
+.header h2,
+.header h3,
+.header h4,
+.header h5{
+    margin:2px;
+}
 
-        th, td{
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
+.info{
+    width:100%;
+    margin:15px 0;
+    font-weight:bold;
+}
 
-        footer{
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 10px;
-            border-top: 1px solid black;
-        }
-    </style>
+.info td{
+    border:none;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+th,td{
+    border:1px solid black;
+    padding:6px;
+    text-align:center;
+    font-size:13px;
+}
+
+.break{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-weight:bold;
+}
+
+.footer{
+    margin-top:30px;
+    width:100%;
+}
+
+.sign{
+    width:45%;
+    display:inline-block;
+    text-align:center;
+    font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>JSS Science and Technology University</h1>
-    <h2>Department of Computer Science & Engineering</h2>
-    <h2>Class Timetable</h2>
-</header>
+<div class="header">
+    <h4>JSS MAHAVIDYAPEETHA</h4>
+    <h3>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</h3>
+    <h3>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING, MYSORE</h3>
 
-<table>
-    <tr>
-        <th>Day</th>
-        <th>9-10</th>
-        <th>10-11</th>
-        <th>11-12</th>
-    </tr>
+    <h4>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h4>
 
-    <tr>
-        <td>Monday</td>
-        <td>20CS61</td>
-        <td rowspan="2">WT Lab</td>
-        <td>20CS62</td>
-    </tr>
+    <h4>TIME TABLE FOR THE ACADEMIC YEAR 2025-2026 (EVEN SEMESTER) - U.G.</h4>
+</div>
 
-    <tr>
-        <td>Tuesday</td>
-        <td>20CS63</td>
-        <td>20CS64</td>
-    </tr>
-
-    <tr>
-        <td>Wednesday</td>
-        <td colspan="2">Project Work</td>
-        <td>20CS65</td>
-    </tr>
+<table class="info">
+<tr>
+    <td><b>Semester: VI</b></td>
+    <td><b>Section: "A"</b></td>
+    <td><b>Room No: CS-201</b></td>
+</tr>
 </table>
 
 <table>
-    <tr>
-        <th>Code</th>
-        <th>Subject</th>
-        <th>Faculty</th>
-    </tr>
+<tr>
+    <th>DAY</th>
+    <th>07:30-08:30</th>
+    <th>08:30-09:30</th>
+    <th>09:30-10:30</th>
+    <th>10:30-11:00</th>
+    <th>11:00-11:50</th>
+    <th>11:50-12:40</th>
+    <th>12:40-01:30</th>
+    <th>01:30-02:30</th>
+    <th>02:30-03:30</th>
+    <th>03:30-04:30</th>
+    <th>04:30-05:30</th>
+</tr>
 
-    <tr>
-        <td>20CS61</td>
-        <td>Web Technology</td>
-        <td>Prof. VS</td>
-    </tr>
+<tr>
+    <td>MON</td>
+    <td></td>
+    <td>22CS641<br>22CS643</td>
+    <td>OE-II</td>
 
-    <tr>
-        <td>20CS62</td>
-        <td>Machine Learning</td>
-        <td>Prof. SNM</td>
-    </tr>
+    <td rowspan="6" class="break">BREAK</td>
 
-    <tr>
-        <td>20CS63</td>
-        <td>Internet of Things</td>
-        <td>Prof. SGC</td>
-    </tr>
+    <td>22CS630</td>
+    <td>22HU612</td>
+    <td>22CS620</td>
 
-    <tr>
-        <td>20CS64</td>
-        <td>Cloud Computing</td>
-        <td>Prof. MAA</td>
-    </tr>
+    <td rowspan="6" class="break">BREAK</td>
+
+    <td colspan="3">
+        22CS67L A2<br>
+        SW LAB 2
+    </td>
+</tr>
+
+<tr>
+    <td>TUE</td>
+    <td></td>
+    <td></td>
+    <td>OE-III</td>
+
+    <td>22CS630</td>
+    <td>22CS610</td>
+    <td>22HU612</td>
+
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>WED</td>
+    <td>22CS610</td>
+    <td>22CS641/<br>22CS643</td>
+    <td>OE-II</td>
+
+    <td colspan="2">
+        22CS67L A1<br>
+        SW LAB 2
+    </td>
+
+    <td></td>
+
+    <td colspan="3">
+        22CS68L A2<br>
+        SW LAB 1
+    </td>
+</tr>
+
+<tr>
+    <td>THURS</td>
+    <td></td>
+    <td></td>
+    <td>OE-III</td>
+
+    <td>22CS620</td>
+    <td>22CS610</td>
+    <td></td>
+
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>FRI</td>
+    <td></td>
+    <td>22CS641/<br>22CS643</td>
+    <td>OE-II</td>
+
+    <td>22CS630</td>
+    <td colspan="2">
+        22CS630P A2<br>
+        HW LAB
+    </td>
+
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>SAT</td>
+    <td></td>
+    <td>22CS610</td>
+    <td>OE-III</td>
+
+    <td>22CS620</td>
+    <td colspan="2">
+        22CS630P A1<br>
+        HW LAB
+    </td>
+
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
 
-<footer>
-    <h3>Dr.Anil Kumar </h3>
-    <p>Head of the Department, CSE</p>
-</footer>
+<br>
+
+<table>
+<tr>
+    <th>Sub. Code</th>
+    <th>Subject Title</th>
+    <th>Credits</th>
+    <th>Course Instructor</th>
+</tr>
+
+<tr>
+    <td>22CS610</td>
+    <td>Machine Learning</td>
+    <td>4</td>
+    <td>Prof. Savitha N</td>
+</tr>
+
+<tr>
+    <td>22CS620</td>
+    <td>Web Technology</td>
+    <td>3</td>
+    <td>Prof. Shruthi N</td>
+</tr>
+
+<tr>
+    <td>22CS630</td>
+    <td>Internet of Things</td>
+    <td>3</td>
+    <td>Prof. Shwethashree G C</td>
+</tr>
+
+<tr>
+    <td>22CS641 / 22CS643</td>
+    <td>Cloud Computing / Cyber Security</td>
+    <td>3</td>
+    <td>Prof. MAA / Prof. SPM</td>
+</tr>
+
+<tr>
+    <td>22CS653</td>
+    <td>Fundamentals of Computer Networks OE-II</td>
+    <td>3</td>
+    <td>Prof. Aishwarya D S</td>
+</tr>
+
+<tr>
+    <td>22CS662</td>
+    <td>Introduction to Machine Learning OE-III</td>
+    <td>3</td>
+    <td>Dr. Rekha K S</td>
+</tr>
+
+<tr>
+    <td>22CS67L</td>
+    <td>Machine Learning Laboratory</td>
+    <td>1.5</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>22CS68L</td>
+    <td>Web Technology Lab</td>
+    <td>1.5</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>22CS630P</td>
+    <td>Internet of Things Practical</td>
+    <td>1</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>22CS69P</td>
+    <td>Mini Project</td>
+    <td>2</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>22HU612</td>
+    <td>Constitution of India and Professional Ethics</td>
+    <td>0</td>
+    <td></td>
+</tr>
+</table>
+
+<div class="footer">
+    <div class="sign">
+        Dr. Anilkumar K M<br>
+        HOD, Dept. of CS&E
+    </div>
+
+    <div class="sign" style="float:right;">
+        Dr. C Nataraju<br>
+        Principal, SJCE / Dean Engineering, JSSSTU
+    </div>
+</div>
 
 </body>
 </html>
