@@ -1,7 +1,8 @@
 body{
     margin:0;
-    background-color:#fff3e0;
-    font-family:Arial, sans-serif;
+    background-image:url("https://images.shiksha.com/mediadata/images/1559273310phprF5vLT.jpeg");    font-family:Arial, sans-serif;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .container{
