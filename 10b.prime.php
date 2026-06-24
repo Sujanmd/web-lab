@@ -7,9 +7,9 @@
     <h1>Prime Number Checker</h1>
 
     <form method="POST">
-        <label>Number</label>
-        <input name="num" required>
-        <button type="submit">Check!</button>
+    Number:
+    <input type="text" name="num" required>
+    <input type="submit" value="Check!">
     </form>
 
     <p>
